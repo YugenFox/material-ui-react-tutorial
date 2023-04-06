@@ -7,6 +7,7 @@ import SendIcon from "@mui/icons-material/Send";
 import CancelScheduleSendIcon from "@mui/icons-material/CancelScheduleSend";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import TextField from '@mui/material/TextField';
 
 function CheckboxExample() {
   const [checked, setChecked] = React.useState(true);
@@ -33,6 +34,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TextField 
+        variant="filled"
+        color="secondary"
+        type="email"
+        label="The Time"
+        placeholder="time"
+        />
         <CheckboxExample />
         <ButtonGroup variant="contained" color="primary">
           <Button size="large" color="primary" startIcon={<SendIcon />}>
